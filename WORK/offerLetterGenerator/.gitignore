@@ -1,0 +1,6 @@
+# Ignore Node dependencies
+**/node_modules/
+
+# Puppeteer's heavy Chromium files
+**/puppeteer/.local-chromium/
+node_modules/
