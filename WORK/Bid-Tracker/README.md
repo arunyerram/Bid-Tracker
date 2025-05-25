@@ -75,6 +75,15 @@ cd Bid-Tracker/email-archiver
 npm install
 ```
 
+### Libraries used:
+
+Install these libraries explicitly if required:
+
+```bash
+npm install express dotenv googleapis pg node-cron
+npm install --save-dev typescript ts-node ts-node-dev @types/node @types/express @types/pg
+```
+
 ## 3. Prepare environment variables
 
 1. Copy the example file:
@@ -100,7 +109,6 @@ Ensure PostgreSQL is running, then create the database and tables:
 
 ```bash
 psql -U postgres -h localhost -p 5432 -f src/db/schema.sql
-db_name=email_archiver
 ```
 
 ## 5. Obtain OAuth Refresh Token
